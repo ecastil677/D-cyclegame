@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: sans-serif;
+}
+
+/*body .container{
+  width: 615px;
+  margin: 0 auto;
+}*/
+
+body header{
+  width: 615px;
+  height: 100px;
+  background-image: url("web-img/header-img.svg");
+  margin: 0 auto;
+  position: relative;
+}
+
+body header .headerLogo{
+  width: 100px;
+}
+
+header .title-container{
+  position: absolute;
+  bottom: 25px;
+  left: 100px;
+}
+
+.title-container h1{
+  color: #006838;
+}
+
+.title-container p{
+  font-size: 15px;
+  color: #3A5D28;
+}
+
+canvas{
+  margin: 0 auto;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D-Cycle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="web-img/apple-icon.png">
+  </head>
+  <body>
+    <header>
+      <img src="assets/primeros objetos/reci.png" alt="logo" class="headerLogo">
+      <div class="title-container">
+        <h1>D-Cycle</h1>
+        <p>By Paper T-Shirt</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="game">
+        <script type="text/javascript" src="js/phaser.min.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/boot.js"></script>
+        <script type="text/javascript" src="js/music.js"></script>
+        <script type="text/javascript" src="js/creditos.js"></script>
+        <script type="text/javascript" src="js/instructions.js"></script>
+        <script type="text/javascript" src="js/gameover.js"></script>
+        <script type="text/javascript">
+        	var juego = new Phaser.Game(615, 660, Phaser.AUTO, 'juego');
+
+        	juego.state.add('Music', Music);
+        	juego.state.add('Boot', Boot);
+        	juego.state.add('Instructions', Instructions);
+        	juego.state.add('Game', Game);
+        	juego.state.add('GameOver', GameOver);
+        	juego.state.add('Creditos', Creditos);
+        	juego.state.start('Music');
+        </script>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+
+  </footer>
+</html>
